@@ -1,1 +1,17 @@
-<p>github-user works!</p>
+<div class="intro">
+  <h2>You can search your Github Username</h2>
+</div>
+
+<div class="form">
+  <form (ngSubmit)="onsubmit(myForm)" #myForm="ngForm">
+    <input
+      type="text"
+      placeholder="Search Users.."
+      name="userSearch"
+      ngModel
+      required
+    />
+    <button class="btn" type="submit" [disabled]="!myForm.valid">Search</button>
+  </form>
+  <!-- <p>{{ searchTerm }}</p> -->
+</div>
