@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { GithubUserComponent } from './github-user/github-user.component';
 import { GihubReposComponent } from './gihub-repos/gihub-repos.component';
 import { ConfirmPipe } from './confirm.pipe';
+import { HoverDirective } from './hover.directive';
 
 @NgModule({
-  declarations: [AppComponent, GithubUserComponent, GihubReposComponent, ConfirmPipe],
+  declarations: [AppComponent, GithubUserComponent, GihubReposComponent, ConfirmPipe, HoverDirective],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
