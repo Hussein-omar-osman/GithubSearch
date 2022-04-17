@@ -128,3 +128,8 @@ svg {
   height: 25px;
   width: 25px;
 }
+
+.loginName {
+  font-size: 15px;
+  font-weight: 700;
+}
