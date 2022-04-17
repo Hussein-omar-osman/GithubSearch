@@ -15,3 +15,33 @@
   </form>
   <!-- <p>{{ searchTerm }}</p> -->
 </div>
+
+<div class="user" *ngIf="dataFetched">
+  <div class="card">
+    <div>
+      <img class="avatar" [src]="user.avatar_url" [alt]="user.name" />
+    </div>
+    <div class="user-info">
+      <h2>{{ user.name }}</h2>
+      <p>{{ user.bio }}</p>
+      <ul class="info">
+        <li>{{ user.followers }}<strong>Followers</strong></li>
+        <li>{{ user.following }}<strong>Following</strong></li>
+        <li>{{ user.public_repos }}<strong>Repos</strong></li>
+      </ul>
+      <div id="repos"></div>
+    </div>
+  </div>
+</div>
+
+<div class="repos" *ngIf="reposFetched">
+  <div *ngFor="let r of repos">
+    <div class="eachRepo">
+      <h3>{{ r.name }}</h3>
+      <div class="clas"></div>
+      <span>{{ r.visibility }}</span>
+      <span>{{ r.watchers }}</span>
+      <span>{{ r.language }}</span>
+    </div>
+  </div>
+</div>
