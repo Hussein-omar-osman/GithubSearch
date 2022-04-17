@@ -13,7 +13,7 @@ input {
   font-size: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
-  width: 300px;
+  width: 280px;
 }
 
 input::placeholder {
@@ -73,11 +73,11 @@ input:focus {
 
 .btn {
   margin: 0 10px;
-  padding: 10px;
+  padding: 15px;
   color: #eee;
   cursor: pointer;
   border-radius: 10px;
-  background-color: #90a3f8;
+  background-color: #636e72;
   outline: none;
   border: none;
 }
@@ -86,4 +86,31 @@ input:focus {
   color: #eee;
   max-width: 600px;
   margin: 20px auto;
+}
+
+.allrepos {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.eachRepo {
+  width: 400px;
+  margin: 30px 40px;
+  width: 400px;
+  color: #eee;
+  padding: 20px;
+  background-color: #4c2885;
+  background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.repoH2 {
+  max-width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  color: white;
 }
