@@ -78,6 +78,8 @@ input:focus {
   cursor: pointer;
   border-radius: 10px;
   background-color: #90a3f8;
+  outline: none;
+  border: none;
 }
 
 .intro {

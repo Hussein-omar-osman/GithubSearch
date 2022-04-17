@@ -1,8 +1,40 @@
 .content {
-  color: white;
+  color: rgb(201, 201, 201);
+  display: flex;
+  justify-content: space-around;
 }
 
 hr {
   color: rgb(168, 165, 165);
   margin: 20px 20px;
+}
+
+.user,
+.repos {
+  background-color: #4c2885;
+  background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+.user button,
+.repos button {
+  margin: 0 150px;
+  padding: 10px;
+  color: rgb(255, 248, 248);
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #90a3f8;
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 248, 248);
 }
