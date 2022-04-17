@@ -1,3 +1,7 @@
+.firstHr {
+  color: rgb(168, 165, 165);
+  margin: 20px 20px;
+}
 .form {
   max-width: 400px;
   margin: 10px auto;
