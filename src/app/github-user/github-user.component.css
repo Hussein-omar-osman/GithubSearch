@@ -114,3 +114,17 @@ input:focus {
   text-align: center;
   color: white;
 }
+
+.svgSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+svg {
+  /* margin-top: 10px; */
+  margin-right: 10px;
+  height: 25px;
+  width: 25px;
+}
