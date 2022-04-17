@@ -5,9 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GithubUserComponent } from './github-user/github-user.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, GithubUserComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
