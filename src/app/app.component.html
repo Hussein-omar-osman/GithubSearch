@@ -3,9 +3,11 @@
     <h1>
       Search github usernames and receive the user and repository information.
     </h1>
-    <p>Click the button below to continue.</p>
-    <button><a [routerLink]="'/githubUser'" target="_blank"> Users</a></button>
+    <button hidden>
+      <a [routerLink]="'/githubUser'" target="_blank"> Users</a>
+    </button>
   </div>
 </div>
+<div><app-github-user></app-github-user></div>
 <!-- <hr /> -->
 <router-outlet></router-outlet>
