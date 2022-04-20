@@ -12,6 +12,8 @@ export class GithubUserComponent implements OnInit {
 
   user;
   repos;
+  errorReceived;
+  errorDisplay = false;
   reposFetched = false;
   dataFetched = false;
   searchTerm: string;
@@ -19,11 +21,18 @@ export class GithubUserComponent implements OnInit {
     this.searchTerm = form.value.userSearch;
     console.log(this.searchTerm);
 
-    this.gitHubApiService.getGithubUser(this.searchTerm).subscribe((data) => {
-      this.user = data;
-      this.dataFetched = true;
-      console.log(data);
-    });
+    this.gitHubApiService.getGithubUser(this.searchTerm).subscribe(
+      (data) => {
+        this.user = data;
+        this.dataFetched = true;
+        this.errorDisplay = false;
+        console.log(data);
+      },
+      (error) => {
+        this.errorReceived = error;
+        this.errorDisplay = true;
+      }
+    );
 
     this.gitHubApiService
       .getGithubUserRepos(this.searchTerm)

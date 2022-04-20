@@ -153,3 +153,10 @@ svg {
   font-size: 15px;
   margin: 0 0 0 300px;
 }
+
+.error {
+  color: white;
+  width: 600px;
+  margin: 20px auto;
+  font-size: 2rem;
+}

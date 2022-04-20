@@ -158,3 +158,8 @@
     </div>
   </div>
 </div>
+
+<div class="error" *ngIf="errorDisplay">
+  <p>404 ERROR</p>
+  <p>User name {{ errorReceived.error.message }}</p>
+</div>
